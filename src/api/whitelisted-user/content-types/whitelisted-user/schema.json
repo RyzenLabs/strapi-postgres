@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "whitelisted_users",
+  "info": {
+    "singularName": "whitelisted-user",
+    "pluralName": "whitelisted-users",
+    "displayName": "WhitelistedUser"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "address": {
+      "type": "string",
+      "required": true,
+      "maxLength": 42,
+      "minLength": 42
+    },
+    "username": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ethereum_minting_suggestions",
+  "info": {
+    "singularName": "ethereum-minting-suggestion",
+    "pluralName": "ethereum-minting-suggestions",
+    "displayName": "EthereumMintingSuggestion"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "contractAddress": {
+      "type": "string",
+      "required": true
+    },
+    "contractName": {
+      "type": "string",
+      "private": true,
+      "required": true
+    },
+    "mintingFunction": {
+      "type": "string"
+    },
+    "flipStateFunction": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "kind": "collectionType",
+  "collectionName": "upcoming_collections",
+  "info": {
+    "singularName": "upcoming-collection",
+    "pluralName": "upcoming-collections",
+    "displayName": "UpcomingCollection",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "chain": {
+      "type": "enumeration",
+      "enum": [
+        "Ethereum",
+        "Solana",
+        "Polygon"
+      ],
+      "required": true
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "website_url": {
+      "type": "string",
+      "regex": "https?:\\/\\/(www\\.)?[-a-zA-Z0-9@:%._\\+~#=]{1,256}\\.[a-zA-Z0-9()]{1,6}\\b([-a-zA-Z0-9()@:%_\\+.~#?&//=]*)",
+      "required": true
+    },
+    "twitter_url": {
+      "type": "string",
+      "required": false,
+      "regex": "https?:\\/\\/(www\\.)?[-a-zA-Z0-9@:%._\\+~#=]{1,256}\\.[a-zA-Z0-9()]{1,6}\\b([-a-zA-Z0-9()@:%_\\+.~#?&//=]*)"
+    },
+    "discord_url": {
+      "type": "string",
+      "regex": "https?:\\/\\/(www\\.)?[-a-zA-Z0-9@:%._\\+~#=]{1,256}\\.[a-zA-Z0-9()]{1,6}\\b([-a-zA-Z0-9()@:%_\\+.~#?&//=]*)",
+      "required": false
+    },
+    "mintPrice": {
+      "type": "float"
+    },
+    "date": {
+      "type": "datetime"
+    },
+    "contractAddress": {
+      "type": "string"
+    },
+    "candyMachineId": {
+      "type": "string"
+    },
+    "marketplace_url": {
+      "type": "string",
+      "regex": "https?:\\/\\/(www\\.)?[-a-zA-Z0-9@:%._\\+~#=]{1,256}\\.[a-zA-Z0-9()]{1,6}\\b([-a-zA-Z0-9()@:%_\\+.~#?&//=]*)"
+    },
+    "logo_url": {
+      "type": "string"
+    },
+    "asset_image_url": {
+      "displayName": "asset_preview_urls",
+      "type": "component",
+      "repeatable": true,
+      "component": "collection.asset-preview-urls"
+    },
+    "totalSupply": {
+      "type": "biginteger"
+    }
+  }
+}
