@@ -59,7 +59,7 @@
     "logo_url": {
       "type": "string"
     },
-    "asset_image_url": {
+    "asset_image_urls": {
       "displayName": "asset_preview_urls",
       "type": "component",
       "repeatable": true,
